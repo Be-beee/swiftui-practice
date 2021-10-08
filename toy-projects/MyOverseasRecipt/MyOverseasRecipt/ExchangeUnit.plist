@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>unitdata</key>
+	<array>
+		<string>한국 KRW</string>
+		<string>미국 USD</string>
+		<string>일본 JPY 네팔 NPR</string>
+		<string>유럽연합 EUR</string>
+		<string>중국 CNY</string>
+		<string>홍콩 HKD</string>
+		<string>태국 THB</string>
+		<string>대만 TWD</string>
+		<string>필리핀 PHP마카오 MOP</string>
+		<string>싱가포르 SGD</string>
+		<string>호주 AUD</string>
+		<string>베트남 VND</string>
+		<string>영국 GBP</string>
+		<string>캐나다 CAD</string>
+		<string>말레이시아 MYR</string>
+		<string>러시아 RUB</string>
+		<string>남아프리카공화국 ZAR</string>
+		<string>노르웨이 NOK</string>
+		<string>뉴질랜드 NZD</string>
+		<string>덴마크 DKK</string>
+		<string>멕시코 MXN</string>
+		<string>몽골 MNT</string>
+		<string>바레인 BHD</string>
+		<string>방글라데시 BDT</string>
+		<string>브라질 BRL</string>
+		<string>브루나이 BND</string>
+		<string>사우디아라비아 SAR</string>
+		<string>스리랑카 LKR</string>
+		<string>스웨덴 SEK</string>
+		<string>스위스 CHF</string>
+		<string>아랍에미리트 AED</string>
+		<string>알제리 DZD</string>
+		<string>오만 OMR</string>
+		<string>요르단 JOD</string>
+		<string>이스라엘 ILS</string>
+		<string>이집트 EGP</string>
+		<string>인도 INR</string>
+		<string>인도네시아 IDR</string>
+		<string>체코 CZK</string>
+		<string>칠레 CLP</string>
+		<string>카자흐스탄 KZT</string>
+		<string>카타르 QAR</string>
+		<string>케냐 KES</string>
+		<string>콜롬비아 COP</string>
+		<string>쿠웨이트 KWD</string>
+		<string>탄자니아 TZS</string>
+		<string>터키 TRY</string>
+		<string>파키스탄 PKR</string>
+		<string>폴란드 PLN</string>
+		<string>헝가리 HUF</string>
+	</array>
+</dict>
+</plist>

@@ -7,6 +7,19 @@
 
 import SwiftUI
 
+class ExchangeUnit: Codable {
+    var unitdata: [String]
+    
+    init() {
+        let path = Bundle.main.path(forResource: "ExchangeUnit", ofType: "plist") ?? ""
+        
+        let xml = FileManager.default.contents(atPath: path) ?? Data()
+        let data = try? PropertyListDecoder().decode(ExchangeUnit.self, from: xml)
+        
+        self.unitdata = data?.unitdata ?? []
+    }
+}
+
 struct ExchangeView: View {
     
     var body: some View {
@@ -19,7 +32,7 @@ struct ExchangeView: View {
 }
 
 struct ExInfoView: View {
-    var nations = [("한국", "KRW"), ("미국", "USD"), ("일본", "JPY"), ("대만", "TWD"), ("홍콩", "HKD"), ("멕시코", "MXN"), ("러시아", "RUB")]
+    var nations = ExchangeUnit().unitdata
     @State var selected: Int
     @State var exPrice = ""
     var body: some View {
@@ -27,7 +40,7 @@ struct ExInfoView: View {
             HStack {
                 Picker(selection: $selected, label: Text("국가 선택")) {
                         ForEach(0 ..< nations.count) {
-                            Text(self.nations[$0].0)
+                            Text(self.nations[$0])
                         }
                 }
                 Spacer()
@@ -36,7 +49,7 @@ struct ExInfoView: View {
                 TextField("가격 입력", text: $exPrice)
                     .multilineTextAlignment(.trailing)
                 Spacer()
-                Text(nations[selected].1)
+                Text(nations[selected].split(separator: " ")[1])
             }
         }
         .padding()
