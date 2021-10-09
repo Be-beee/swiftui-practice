@@ -12,6 +12,7 @@
 		B57F7E91270D830300C16B28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F7E90270D830300C16B28 /* ContentView.swift */; };
 		B57F7E93270D830400C16B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57F7E92270D830400C16B28 /* Assets.xcassets */; };
 		B57F7E96270D830400C16B28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57F7E95270D830400C16B28 /* Preview Assets.xcassets */; };
+		B59184FB2711255700AD11E0 /* ReciptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59184FA2711255700AD11E0 /* ReciptView.swift */; };
 		B5FB870E270F1731006C05AC /* ExchangeUnit.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FB870D270F1731006C05AC /* ExchangeUnit.plist */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		B57F7E90270D830300C16B28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B57F7E92270D830400C16B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57F7E95270D830400C16B28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B59184FA2711255700AD11E0 /* ReciptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciptView.swift; sourceTree = "<group>"; };
 		B5FB870D270F1731006C05AC /* ExchangeUnit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExchangeUnit.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 				B57F7E90270D830300C16B28 /* ContentView.swift */,
 				B552F5E6270ED69500DF0153 /* ExchangeView.swift */,
 				B5FB870D270F1731006C05AC /* ExchangeUnit.plist */,
+				B59184FA2711255700AD11E0 /* ReciptView.swift */,
 				B57F7E92270D830400C16B28 /* Assets.xcassets */,
 				B57F7E94270D830400C16B28 /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57F7E91270D830300C16B28 /* ContentView.swift in Sources */,
+				B59184FB2711255700AD11E0 /* ReciptView.swift in Sources */,
 				B57F7E8F270D830300C16B28 /* MyOverseasReciptApp.swift in Sources */,
 				B552F5E7270ED69500DF0153 /* ExchangeView.swift in Sources */,
 			);
