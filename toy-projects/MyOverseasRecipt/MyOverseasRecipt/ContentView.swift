@@ -9,20 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ExchangeView()
-    }
-}
-
-struct ReciptSampleView: View {
-    
-    var body: some View {
         ZStack {
-            Color(UIColor.systemBlue)
-            Text("RECIPT")
-                .font(.title)
+            ExchangeView()
+            SampleView()
         }
-        .frame(width: UIScreen.main.bounds.width, height: 120)
-        
     }
 }
 
