@@ -17,7 +17,8 @@ struct SampleView: View {
             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
             .background(Color(.secondarySystemBackground))
             .cornerRadius(20)
-            .offset(y: max(geometry.size.height - 100, 0))
+            .offset(y: max(0, 0))
+            // 임시 offset 조정
         }
     }
 }
@@ -32,9 +33,36 @@ struct IndicatorView: View {
 
 struct ReciptContentView: View {
     var body: some View {
-        Text("RECIPT")
-            .font(.title)
-            .fontWeight(.bold)
+        VStack {
+            Text("RECIPT")
+                .font(.title)
+                .fontWeight(.bold)
+            ScrollView {
+                HStack{
+                    Text("asdf")
+                    Spacer()
+                    Text("0000 KRW")
+                }.padding()
+                HStack{
+                    Text("asdf22")
+                    Spacer()
+                    Text("0000 KRW")
+                }.padding()
+                HStack{
+                    Text("asdf33")
+                    Spacer()
+                    Text("0000 KRW")
+                }.padding()
+                // sample data
+                // change to list
+            }
+            Divider()
+                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+            Text("Total: 00000 KRW")
+                .fontWeight(.semibold)
+                .padding(EdgeInsets(top: 10, leading: 0, bottom: 20, trailing: 0))
+        }
+        .frame(width: UIScreen.main.bounds.width, alignment: .center)
     }
 }
 
