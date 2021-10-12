@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SampleView: View {
+struct ReciptView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -64,8 +64,8 @@ struct ReciptContentView: View {
     }
 }
 
-struct SampleView_Previews: PreviewProvider {
+struct ReciptView_Previews: PreviewProvider {
     static var previews: some View {
-        SampleView()
+        ReciptView()
     }
 }
