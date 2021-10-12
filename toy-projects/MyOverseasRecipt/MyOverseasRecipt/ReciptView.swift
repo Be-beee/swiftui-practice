@@ -32,26 +32,28 @@ struct IndicatorView: View {
 }
 
 struct ReciptContentView: View {
-    @State var itemlist = [
-        ReciptInfo(), ReciptInfo(), ReciptInfo(),
-        ReciptInfo(), ReciptInfo(), ReciptInfo(),
-        ReciptInfo(), ReciptInfo(), ReciptInfo()
-    ] // sample list
+    @State var itemlist: [ReciptInfo] = []
     @State var totalPrice = 0
     var body: some View {
         VStack {
             Text("RECIPT")
                 .font(.title)
                 .fontWeight(.bold)
-            List {
-                ForEach(itemlist) { item in
-                    HStack {
-                        Text(item.name)
-                        Spacer()
-                        Text("\(item.price) KRW")
+            if itemlist.count > 0 {
+                List {
+                    ForEach(itemlist) { item in
+                        HStack {
+                            Text(item.name)
+                            Spacer()
+                            Text("\(item.price) KRW")
+                        }
                     }
                 }
+            } else {
+                Text("No Items")
+                    .padding()
             }
+            
             Divider()
                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
             Text("Total: \(totalPrice) KRW")
