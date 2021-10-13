@@ -50,8 +50,7 @@ struct ReciptContentView: View {
                     }
                 }
             } else {
-                Text("No Items")
-                    .padding()
+                EmptyReciptContentView()
             }
             
             Divider()
@@ -61,6 +60,13 @@ struct ReciptContentView: View {
                 .padding(EdgeInsets(top: 10, leading: 0, bottom: 20, trailing: 0))
         }
         .frame(width: UIScreen.main.bounds.width, alignment: .center)
+    }
+}
+
+struct EmptyReciptContentView: View {
+    var body: some View {
+        Text("No Items")
+            .padding()
     }
 }
 
