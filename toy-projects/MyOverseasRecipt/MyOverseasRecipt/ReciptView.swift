@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct ReciptView: View {
+    @State var transition: CGFloat = UIScreen.main.bounds.height - 150
+    // recipt view를 위한 적정 높이 계산 필요
+    var dragGesture: some Gesture {
+        DragGesture()
+            .onEnded { value in
+                if value.translation.height > 50 {
+                    self.transition = 0
+                }
+            }
+    }
+    // gesture 적용 필요
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -17,8 +28,8 @@ struct ReciptView: View {
             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .top)
             .background(Color(.secondarySystemBackground))
             .cornerRadius(20)
-            .offset(y: max(0, 0))
-            // 임시 offset 조정
+            .offset(y: max(transition, 0))
+//            .gesture(dragGesture)
         }
     }
 }
