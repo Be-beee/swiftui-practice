@@ -1,5 +1,7 @@
 //
 //  ContentView.swift
+//  Rename --> MainView.swift
+//
 //  MyOverseasRecipt
 //
 //  Created by 서보경 on 2021/10/06.
@@ -7,7 +9,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         ZStack {
             ExchangeView()
@@ -16,8 +18,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
